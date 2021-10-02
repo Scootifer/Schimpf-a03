@@ -8,4 +8,9 @@
 //
 import java.util.*;
 public class Solution39 {
+
+    public static void main(String[] args) {
+        final Database d = new Database();
+        d.sort();
+    }
 }
