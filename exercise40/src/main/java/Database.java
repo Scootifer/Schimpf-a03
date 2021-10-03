@@ -32,4 +32,26 @@ public class Database {
         this.position.put("Webber", "Web Developer");
     }
 
+    public void findRecord(String s){
+        Iterator i = this.fName.entrySet().iterator();
+        Map.Entry element;
+
+        System.out.println("Full Name\t\t\t | Position \t\t | Separation Date");
+        System.out.println();
+        while(i.hasNext()) {
+            element = (Map.Entry)i.next();
+
+            if(element.getValue().toString().contains(s) || element.getKey().toString().contains(s)) {
+                System.out.format("%-10s %-9s | %-17s | %-16s\n", element.getKey(), element.getValue(), this.position.get(element.getKey()), this.separationDate.get(element.getKey()));
+            }
+
+        }
+
+    }
+    public void printTableHead(){
+
+
+
+    }
+
 }

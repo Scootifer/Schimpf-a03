@@ -8,11 +8,20 @@
 //
 
 
-import java.util.*;
+import java.util.Scanner;
 public class Solution40 {
 
     public static void main(String[] args) {
         final Database d = new Database();
+        final Scanner scan = new Scanner(System.in);
+        String input;
+
+        System.out.print("Please enter your string: ");
+        input = scan.next();
+        System.out.println();
+        d.findRecord(input);
+
+
 
     }
 }
