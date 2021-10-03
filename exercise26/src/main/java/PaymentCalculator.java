@@ -15,10 +15,10 @@ public class PaymentCalculator {
         this.monthlyPayment = m;
     }
 
-    public double calculateMonthsUntilPaidOff() {
+    public int calculateMonthsUntilPaidOff() {
 
 
-        return Math.ceil(-(1/30) * Math.log(1 + (this.balance/this.monthlyPayment) * (1 - Math.pow((1+this.dRate), 30))) / Math.log(1 + this.dRate));
+        return (int)Math.ceil(-(1.0/30) * Math.log(1 + (this.balance/this.monthlyPayment) * (1 - Math.pow((1+this.dRate), 30))) / Math.log(1 + this.dRate));
     }
 
 }

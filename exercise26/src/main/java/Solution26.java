@@ -10,7 +10,7 @@ public class Solution26 {
         final Scanner scan = new Scanner(System.in);
 
         double balance, dRate, monthlyPayment;
-        double numMonths;
+        int numMonths;
 
 
         System.out.print("Please enter the balance: ");
