@@ -2,6 +2,7 @@
  *  UCF COP3330 Fall 2021 Assignment 3 Solutions
  *  Copyright 2021 Scott Schimpf
  */
+import java.lang.Math;
 public class HeartRateManager {
 
     //This class will store the resting pulse and age of the user and set them in the constructor
@@ -34,6 +35,6 @@ public class HeartRateManager {
     //Not using it has the most consistent results. It is not specified in the question
     double calculateTargetHR(int percent) {
 
-        return ( ((220-this.age) - this.resting) * ((double)percent/100) + this.resting);
+        return (((220-this.age) - this.resting) * ((double)percent/100) + this.resting);
     }
 }
